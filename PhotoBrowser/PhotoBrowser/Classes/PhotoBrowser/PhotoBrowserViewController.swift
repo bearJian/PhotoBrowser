@@ -107,8 +107,10 @@ extension PhotoBrowserViewController {
     // 保存图片
     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
     
+    // 提示保存成功
     let alerView = UIAlertView(title: "提示", message: "已保存到相册", delegate: nil, cancelButtonTitle: "确定")
     alerView .show()
+    
     }
 }
 
